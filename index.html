@@ -417,36 +417,9 @@
       margin: 2.5rem 0 3rem;
     }
 
-    .prod-timeline .pt-label {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 2.5px;
-      text-transform: uppercase;
-      color: var(--green);
-      margin-bottom: 0.35rem;
-    }
-
-    .prod-timeline h2 {
-      font-size: 1.5rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: -0.5px;
-      line-height: 1.1;
-      color: var(--black);
-    }
-
-    .prod-timeline .pt-sub {
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-top: 0.3rem;
-    }
-
     .pt-list {
       list-style: none;
-      margin: 1.75rem 0 0;
+      margin: 0;
       padding: 0;
     }
 
@@ -547,6 +520,9 @@
       margin: 4.5rem 0 0;
     }
 
+    /* First break sits directly under the cover, so it needs less air above. */
+    .part-break--first { margin-top: 2.75rem; }
+
     .part-break-rule {
       display: block;
       width: 56px;
@@ -613,11 +589,16 @@
 
 <div class="page-wrap">
 
-  <!-- ── PRODUCTION TIMELINE ──────────────────────────────────────────── -->
-  <section class="prod-timeline" id="production-timeline">
-    <div class="pt-label">Schedule</div>
+  <!-- ── PART BREAK: SCHEDULE ─────────────────────────────────────────── -->
+  <div class="part-break part-break--first" id="production-timeline">
+    <span class="part-break-rule"></span>
+    <div class="part-break-label">Schedule</div>
     <h2>Production Timeline</h2>
-    <div class="pt-sub">February – October 2026</div>
+    <p class="part-break-sub">February – October 2026</p>
+  </div>
+
+  <!-- ── PRODUCTION TIMELINE ──────────────────────────────────────────── -->
+  <section class="prod-timeline">
 
     <ol class="pt-list">
 
