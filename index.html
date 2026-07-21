@@ -541,6 +541,47 @@
       line-height: 0.8;
     }
 
+    /* ─── Part Break (Timeline → Script) ───────────────────────────────────── */
+    .part-break {
+      text-align: center;
+      margin: 4.5rem 0 0;
+    }
+
+    .part-break-rule {
+      display: block;
+      width: 56px;
+      height: 4px;
+      background: var(--green);
+      margin: 0 auto 1.5rem;
+    }
+
+    .part-break-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: var(--green);
+      margin-bottom: 0.4rem;
+    }
+
+    .part-break h2 {
+      font-size: 2rem;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: -1px;
+      line-height: 1.05;
+      color: var(--black);
+    }
+
+    .part-break-sub {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.6rem;
+    }
+
     /* ─── Responsive ───────────────────────────────────────────────────────── */
     @media (max-width: 600px) {
       .cover { padding: 3.5rem 1.5rem 3rem; }
@@ -550,6 +591,9 @@
       .section-numeral { font-size: 2.5rem; min-width: 42px; }
       .features-grid { grid-template-columns: 1fr; }
       .prod-timeline { padding: 1.75rem 1.5rem; }
+      .part-break { margin-top: 3rem; }
+      .part-break h2 { font-size: 1.5rem; letter-spacing: -0.5px; }
+      .part-break-sub { letter-spacing: 1.2px; }
       .pt-item { grid-template-columns: 1fr; gap: 0.35rem; }
       .pt-date { text-align: left; color: var(--green); }
       .pt-body { border-left: none; padding-left: 0; }
@@ -727,6 +771,14 @@
 
     </ol>
   </section>
+
+  <!-- ── PART BREAK: TIMELINE → SCRIPT ────────────────────────────────── -->
+  <div class="part-break" id="script-outline">
+    <span class="part-break-rule"></span>
+    <div class="part-break-label">The Script</div>
+    <h2>Outline</h2>
+    <p class="part-break-sub">The video, section by section</p>
+  </div>
 
   <!-- ── TABLE OF CONTENTS ────────────────────────────────────────────── -->
   <nav class="toc">
